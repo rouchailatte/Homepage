@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Homepage</title>
+  <title><%= @title %></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<nav id='mainNav'>
+		<ul id='mainNavList'>
+			<li><%= link_to 'Personal', homepage_personal_path %></li>
+			<li><%= link_to 'Experience', homepage_experience_path %></li>
+			<li><%= link_to 'Ideas', homepage_ideas_path %></li>
+			<li><%= link_to 'Interest', homepage_interest_path %></li>
+			<li><%= link_to 'Activities', homepage_activity_path %></li>
+		</ul>
+	</nav>
 <%= yield %>
 
 </body>

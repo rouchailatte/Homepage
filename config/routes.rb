@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'homepage/personal'
+
+  get 'homepage/experience'
+
+  get 'homepage/interest'
+
+  get 'homepage/activity'
+
+  get 'homepage/ideas'
+
+  root to: 'homepage#personal'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
