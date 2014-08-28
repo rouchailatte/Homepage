@@ -3,14 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body
 {
+  font-size: 16px;
   font-family: 'Open Sans Condensed', sans-serif;
   padding: 0;
   margin: 0;
-  background: url(backred.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
 }
 
 /* this is related to the main body of the webiste*/
@@ -18,7 +14,7 @@ body
 {
   margin: 100px 250px;
   padding: 20px 0 0 0;
-  background: rgba(255, 255, 255, 0.55);
+  background: rgb(255, 255, 255);
 
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6);
 }
