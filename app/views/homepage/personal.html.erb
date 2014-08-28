@@ -1,18 +1,33 @@
 <body>
-	<section id='basicInfo'>
-		<canvas id='basicInfoImage'>
-			
-		</canvas>
+	<div id='personalWrapper'>
+		<section id='personalBasicInfo'>
+			<canvas id='personalBasicInfoImage' width='400' height='400'>
+				
+			</canvas>
 
-		<div id='basicInfoText'>
-			<ul>
-				<li>Benjamin Bao</li>
-				<li>University of California, Los Angeles</li>
-				<li>10933 Rochester Ave, Apt 416</li>
-				<li>Los Angeles, CA 90024</li>
-				<li>Cell: 3109139124</li>
-				<li>Email: byyagp@gmail.com</li>
-			</ul>
-		</div>
-	</section>
+			<div id='personalBasicInfoText'>
+				<ul>
+					<li>Benjamin Bao</li>
+					<li>University of California, Los Angeles</li>
+					<li>10933 Rochester Ave, Apt 416</li>
+					<li>Los Angeles, CA 90024</li>
+					<li>Cell: 3109139124</li>
+					<li>Email: byyagp@gmail.com</li>
+				</ul>
+			</div>
+		</section>
+		<section id='personalIntroductory'></section>
+	</div>
 </body>
+
+
+
+<script>
+		var c = document.getElementById("personalBasicInfoImage");
+		var ctx = c.getContext("2d");
+		var imageObj = new Image();
+		imageObj.onload = function() {
+        	ctx.drawImage(imageObj, 30, 0);
+      	};
+     	imageObj.src = 'profile.jpg';
+</script>

@@ -1,3 +1,119 @@
 // Place all the styles related to the Homepage controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body
+{
+  font-family: Calibri;
+  padding: 0;
+  margin: 0;
+  background: url(backred.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+/* this is related to the main body of the webiste*/
+#mainWrapper
+{
+  margin: 100px 200px;
+  padding: 20px 0 0 0;
+  background: rgba(255, 255, 255, 0.55);
+
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+#mainNav
+{
+  margin: 60px 20px 20px 20px   ;
+  text-align: center;
+}
+
+ul
+{
+  list-style-type: none;
+}
+
+#mainNavList li
+{
+  font-size: 16px;
+  display: inline;
+  padding: 20px;
+}
+
+
+/* the following is for the personal page */
+#personalWrapper
+{
+  display: flex;
+  flex-direction: vertical;
+  margin: 0 100px 0 100px;
+}
+
+#personalBasicInfo
+{
+  display: flex;
+  flex-direction: horizontal;
+
+  margin-top: 80px;
+}
+#personalBasicInfoImage
+{
+  border: 1px black solid;
+}
+
+#personalBasicInfoText
+{
+  margin-left: 70px
+}
+
+/* the following is for the experience page */
+#experienceWrapper
+{
+  margin: 100px;
+  padding: 0 0 80px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.experienceTitle
+{
+  font-size: 30px;
+}
+
+.experienceBlock
+{
+  margin: 30px 0 0 0;
+}
+
+.experienceList
+{
+  margin: 10px 0 0 0;
+}
+
+.experienceListTitle
+{
+  font-family: Calibri-Bold;
+  margin: 10px 0 5px 0;
+}
+
+.experienceListBody
+{
+  list-style: square;
+  margin: 3px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
